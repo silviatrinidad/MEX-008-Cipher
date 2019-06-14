@@ -1,6 +1,6 @@
 //AQUI VAMOS A DEFINIR EL BOTON "btn-enigm" QUE
 //DEFINIMOS EN HTML.
-const btnEnigm = document.getElementById('btn-enigm');
+const btnReto = document.getElementById('btn-reto');
 
 // el id se agrega a la clase "oculto", osea no mostrar
 const ocultar= (id) => {
@@ -12,19 +12,20 @@ const mostrar= (id) => {
 }
 // aqui se la va a quitar
 
-const abrirEnigma = () =>{
+const abrirReto = () =>{
   ocultar('inicio');
   ocultar('section');
   mostrar('banner-enigma');
   mostrar('instructions');
 }
 
-btnEnigm.addEventListener('click',abrirEnigma);
+btnReto.addEventListener('click',abrirReto);
 
 //dandole funcion al boton INICIO
 const btnInicio =document.getElementById('btn-inicio');
 
-const abrirCifradoVerne =() =>{
+const abrirCifradoVerne =() => {
+  ocultar('inicio');
   ocultar('banner-enigma');
   ocultar('instructions');
   mostrar('cifrado-verne');  
