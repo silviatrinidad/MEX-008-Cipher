@@ -1,4 +1,4 @@
-//AQUI VAMOS A DEFINIR EL BOTON "btn-enigm" QUE
+//AQUI VAMOS A DEFINIR EL BOTON "btn-enigm"  QUE
 //DEFINIMOS EN HTML.
 const btnReto = document.getElementById('btn-reto');
 
@@ -10,7 +10,7 @@ const ocultar= (id) => {
 const mostrar= (id) => {
   document.getElementById(id).classList.remove('oculto');  
 }
-// aqui se la va a quitar
+// aaqui se la va a quitar
 
 const abrirReto = () =>{
   ocultar('inicio');

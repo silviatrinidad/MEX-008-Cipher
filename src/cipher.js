@@ -4,7 +4,7 @@ window.cipher = {
     let textoModif= ''; // TEXTO MODIFICADO vacio. Tendrá nuevo contenido
 
     //
-// iniciamos el ciclo for PARA QUE COMIENCE A REVISAR
+// iiniciamos el ciclo for PARA QUE COMIENCE A REVISAR.
     for ( let i=0; i<=str.length; i++) {
       const newCode= str.charCodeAt(i);
 
