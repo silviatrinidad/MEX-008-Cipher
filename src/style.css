@@ -246,6 +246,18 @@ h5 {
   justify-items: center;
 }
 
+#decifrado-verne {
+  background-image: url(images/banner-books.jpg);
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* ////// PIE DE PAGINA */
 /*.footer {
   width:100%;

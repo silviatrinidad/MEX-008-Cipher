@@ -21,7 +21,7 @@ const abrirReto = () =>{
 
 btnReto.addEventListener('click',abrirReto);
 
-//dandole funcion al boton INICIO
+//dandole funcion al boton CIFRADO VERNE
 const btnInicio =document.getElementById('btn-inicio');
 
 const abrirCifradoVerne =() => {
@@ -32,6 +32,21 @@ const abrirCifradoVerne =() => {
 }
 
 btnInicio.addEventListener('click', abrirCifradoVerne);
+
+//dandole funcion al boton DECIFRADO
+const btnDecifrado =document.getElementById('btn-decifrado');
+
+const abrirDecifradoVerne =() => {
+  ocultar('inicio');
+  ocultar('banner-enigma');
+  ocultar('instructions');
+  ocultar('cifrado-verne');
+  mostrar('decifrado-verne');
+}
+
+btnDecifrado.addEventListener('click', abrirDecifradoVerne);
+
+
 
 /*---------------------------------------------
 ---------------------------------------------
@@ -52,6 +67,6 @@ const inputResult= document.getElementById('result');
 
 //llamando al evento
 btnCifrar.addEventListener('click', () => { 
-    console.log(cipher.encode(offset.value, inputContent.value))
+   // console.log(cipher.encode(offset.value, inputContent.value))
     inputResult.value = cipher.encode(parseInt(offset.value), inputContent.value)
 })
