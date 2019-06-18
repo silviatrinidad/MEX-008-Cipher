@@ -44,7 +44,7 @@ const abrirDecifradoVerne =() => {
   mostrar('decifrado-verne');
 }
 
-btnDecifrado.addEventListener('click', abrirDecifradoVerne);
+btnDecifrado.addEventListener('click', abrirDecifraifradoVerne);
 
 
 
@@ -62,6 +62,29 @@ const inputContent= document.getElementById('content');
 const offset= document.getElementById('offset');
 //llamando al boton de cifrar
 const btnCifrar= document.getElementById('btn-cifrar');
+//llamando la caja de salida 
+const inputResult= document.getElementById('result');
+
+//llamando al evento
+btnCifrar.addEventListener('click', () => { 
+   // console.log(cipher.encode(offset.value, inputContent.value))
+    inputResult.value = cipher.encode(parseInt(offset.value), inputContent.value)
+})
+
+/*---------------------------------------------
+---------------------------------------------
+---------------------------------------------*/
+
+/*decifrado verne*/
+
+/*llamando eventos*/
+
+//llamando el contenido del input
+const inputContent= document.getElementById('content-two');
+// llamando el numero del offset
+const offset= document.getElementById('offset');
+//llamando al boton de cifrar
+const btnCifrar= document.getElementById('btn-decifrar');
 //llamando la caja de salida 
 const inputResult= document.getElementById('result');
 
