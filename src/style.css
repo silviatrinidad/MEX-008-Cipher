@@ -121,7 +121,7 @@ h5 {
 ////////////////////////////////*/
 /* el display none permite que con JS
   la accion de boton "btn-more" lo muestre*/
-.section { 
+.section {
   box-align: left;
   align-items: center;
   width: 100%;
@@ -231,7 +231,8 @@ h5 {
 ////////////////////////////////////
 ////////////////////////////////*/
 /* INICIO PAGINA TRES */
-#cifrado-verne{
+#cifrado-verne{ 
+  
   background-image: url(images/banner-glass.jpg);
   margin: 0 auto;
   width: 100%;
