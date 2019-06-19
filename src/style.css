@@ -259,7 +259,7 @@ h5 {
 }
 
 /* ////// PIE DE PAGINA */
-/*.footer {
+.footer {
   width:100%;
   background:#234f7c;
    list-style: none;
@@ -269,4 +269,4 @@ h5 {
    border-bottom: none;
    overflow: hidden;
    display: inline-block;
-}*/
+}

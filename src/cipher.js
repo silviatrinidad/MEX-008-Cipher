@@ -18,28 +18,8 @@ window.cipher = {
           codigoModif = newCode;
         } 
          textoModif += String.fromCharCode(codigoModif);
-      } 
-       
+      }   
         console.log(textoModif);
         return textoModif;
-
     }
-
-    
-
-},
-
-decode: (offset, str) => {
-  let codigoModif= 0; 
-    let textoModif= '';
-
-    for ( let i=0; i<str.length; i++) {
-      const newCode= str.charCodeAt(i);
-
-      if (newCode >= 65 && newCode <= 90) {
-        codigoModif= (newCode -65 + offset) % 26 + 65;
-        let textoFinal= String.fromCharCode(codigoModif);
-        textoModif += textoFinal;
-    }
-  }
 };
