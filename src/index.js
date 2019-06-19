@@ -57,16 +57,25 @@ btnDecifrado.addEventListener('click', abrirDecifradoVerne);
 /*llamando eventos*/
 
 //llamando el contenido del input
-const inputContent= document.getElementById('content');
+const inputContent= document.getElementById('content-cifrado');
 // llamando el numero del offset
 const offset= document.getElementById('offset');
 //llamando al boton de cifrar
 const btnCifrar= document.getElementById('btn-cifrar');
 //llamando la caja de salida 
-const inputResult= document.getElementById('result');
+const inputResult= document.getElementById('result-cifrado');
 
 //llamando al evento
 btnCifrar.addEventListener('click', () => { 
    // console.log(cipher.encode(offset.value, inputContent.value))
     inputResult.value = cipher.encode(parseInt(offset.value), inputContent.value)
+})
+/* Decifrado Verne | llamando eventos */
+const inputDecifrado= document.getElementById('content-decifrado');
+const offset= document.getElementById('offset');
+const btnDecifrar= document.getElementById('btn-decifrar');
+const resultDecifrar= document.getElementById('result-decifrar');
+//llamando evento
+btnDecifrar.addEventListener('click', () => {
+  resultDecifrar.value = cipher.decode(parseInt(offset.value), inputDecifrado.value)
 })
