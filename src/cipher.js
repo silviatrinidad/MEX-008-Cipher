@@ -1,5 +1,5 @@
 window.cipher = {
-  // DECODIFICAR
+  // DECODIFICAR primero
 decode: (offset, str) => {
   let codigoDecod= 0;
   let textoDecod= '';
