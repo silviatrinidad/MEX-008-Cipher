@@ -55,7 +55,7 @@ const resultDecifrar= document.getElementById('result-decifrar');
 //llamando evento
 btnDecifrar.addEventListener('click', () => {
   resultDecifrar.value = cipher.decode(parseInt(offset.value), inputDecifrado.value)
-})
+});
 
 /*cifrado verne*/
 
@@ -74,4 +74,15 @@ const inputResult= document.getElementById('result-cifrado');
 btnCifrar.addEventListener('click', () => { 
    // console.log(cipher.encode(offset.value, inputContent.value))
     inputResult.value = cipher.encode(parseInt(offset.value), inputContent.value)
-})
+});
+
+
+//FUNCION LIMPIAR FORMULARIO
+const btnBorrar= document.getElementById('btn-borrar');
+const borrarDecifrado= () => {
+  document.getElementById('content-cifrado').reset();
+  document.getElementById('offset').reset();
+  document.getElementById('result-decifrar').reset();
+  
+}
+btnBorrar.addEventListener('click', borrarDecifrado);
