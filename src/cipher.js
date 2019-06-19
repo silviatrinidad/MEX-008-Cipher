@@ -1,4 +1,26 @@
 window.cipher = {
+  // DECODIFICAR
+decode: (offset, str) => {
+  let codigoDecod= 0;
+  let textoDecod= '';
+
+  for (let i=0; i<str.length; i++) {
+    const pastCode= str.charCodeAt(i);
+
+    if (pastCode >= 65 && pastCode <=90) {
+      codigoDecod= (pastCode -90 - offset) % 26 + 90;
+    } else if (pastCode >= 97 && pastCode <= 122) {
+      codigoDecod= (pastCode - 122 - offset) %26 + 122;
+    } else {
+      codigoDecod= pastCode;
+    }
+    textoDecod += String.fromCharCode(codigoDecod);
+  }
+  
+  return textoDecod;
+
+},
+//codificar
   encode: (offset, str) => {
     let codigoModif= 0; // CODIGO MODIFICADO empieza en cero
     let textoModif= ''; // TEXTO MODIFICADO vacio. Tendrá nuevo contenido
@@ -22,26 +44,5 @@ window.cipher = {
         console.log(textoModif);
         return textoModif;
     }
-},
 
-// DECODIFICAR
-decode: (offset, str) => {
-  let codigoDecod= 0;
-  let textoDecod= '';
-
-  for (let i=0; i<str.length; i++) {
-    const pastCode= str.charCodeAt(i);
-
-    if (pastCode>=65 && pastCode<=90) {
-      codigoDecod= (pastCode -65 - offset) % 26 + 65;
-    } else if (pastCode >=97 && pastCode<=122) {
-      codigoDecod= (pastCode -97 - offset) %26 + 97;
-    } else {
-      codigoDecod= pastCode;
-    }
-    textoDecod += String.fromCharCode(codigoDecod);
-  }
-  console.log(textoDecod);
-  return textoDecod;
-}
 };
