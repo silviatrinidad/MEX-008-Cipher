@@ -1,9 +1,20 @@
 # "Budescbook" CIFRADO VERNE. (cifrado césar).
 Budescbook (buscador de descuentos para libros) es un sitio web, creado con tecnología HTML5, CSS y JS, que ofrece al usuario descifrar y cifrar un mensaje para poder ganar un cupón de descuento.
 El sitio web esta inspirado en la novela de Julio Verne "Viaje al Centro de la Tierra", donde uno de sus principales personajes, el profesor Lindenbrock encuentra entre las hojas de un libro un criptograma runico, que, al ser descifrado les da las indicaciones para emprender un viaje al centro de la tierra.
-Esta aplicación esta dirigida al público lector y conocer del autor, sin embargo, aun sin haberlo leido, se puede ubicar perfectamente quien es.
+
+Esta aplicación esta dirigida al público lector y conocer del autor, sin embargo, aun sin haberlo leido, se puede ubicar perfectamente quien es él.
 
  El objetivo principal de este producto interactivo, es obsequiar a la audencia lectora, descuentos en cualquier tipo de libros, proporcionados por diversas afiliaciones, con el fin, de fomentar la lectura y crear una comunidad para lectores, autores y editoriales.
+
+ 
+ FUNCIONAMIENTO
+Para la ajecución de la dinámica, se utiliza el cifrado-decifrado César. Este método de desplazamiento consiste en  mover cada letra de alguna palabra un determinado número de espacios en el alfabeto.
+Específicamente, en este proyecto, el cifrado y su número de desplazamiento lo adivinará el usuario para poder dejar un nuevo mensaje cifrado, eligiendo las mismas características.
+
+ASPECTOS TÉCNICOS
+El dessarrollo de Budescbook se utilizo con HTML (maquetación), CSS(diseño) y Javascript (interacción).
+
+
 
 
 
