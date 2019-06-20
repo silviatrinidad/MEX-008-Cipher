@@ -52,7 +52,7 @@
 
 <!-- AQUI COMIENZA EL RETO-->
   <section id="banner-enigma" class="oculto">
-    <h2> EL CÓDIGO SECRETO DE ARNE SAKNUSSEMM </h2>
+    <p id="title-enigma"> EL CÓDIGO SECRETO DE ARNE SAKNUSSEMM </p>
     <br>
     <div id="text-description">
       <p>El profesor Lindenbrock, llegó con un libro muy antiguo y se encerró en su despacho. Se sentó en su gran sillón
@@ -74,12 +74,101 @@
         avidez.
         Y al mismo tiempo desplegaba cuidadosamente sobre la mesa un trozo de pergamino de unas cinco pulgadas de largo
         por tres de ancho, en el que había trazados, en líneas transversales, unos caracteres mágicos.</p>
-      <br>
+      <br><br>
       <h4>DECIFRANDO EL ENIGMA</h4>
-      <figure class="criptogram"><img src="images/cifrado-verne.png" width="800px" height="300px"></figure>
-      <p> mas texto</p>
+      <p>En criptografía, el cifrado es un procedimiento que utiliza un algoritmo de cifrado con cierta clave (clave de
+        cifrado) para transformar un mensaje, sin atender a su estructura lingüística o significado, de tal forma que sea
+        incomprensible o, al menos, difícil de comprender a toda persona que no tenga la clave secreta (clave de
+        descifrado) del algoritmo. Las claves de cifrado y de descifrado pueden ser iguales (criptografía simétrica),
+        distintas (criptografía asimétrica) o de ambos tipos (criptografía híbrida).
+  
+        El juego de caracteres (alfabeto) usado en el mensaje sin cifrar puede no ser el mismo que el juego de caracteres
+        que se usa en el mensaje cifrado.
+        Un criptograma es un escrito en clave. Normalmente cada signo que se emplea en este tipo de mensajes se
+        corresponde con una letra del alfabeto. De esta manera, un número o una imagen equivale a un determinado signo del
+        abecedario.</p><br>
+      <img src="images/cifrado-verne.png" width="800px" height="300px" id="criptogram">
+      <p id="traduccion"> Traducción del criptograma: "Desciende al cráter del Yocul del Sneffels, cuando la sombra del
+        Scartaris llega a acariciar
+        antes de las calendas de Julio, audaz viajero, y llegarás al centro de la Tierra, como lo hice Yo.
+        Arne Saknussemm".</p><br>
+      <div id="imagenes-varias">
+        <img src="images/profesor-lin.jpg ">
+        <img src="images/paisaje.jpg ">
+        <img src="images/profesor-lin2.jpg ">
+        <br>
+      </div>
     </div>
   </section>
+                   <!--instrucciones-->
+        <section id="instructions" class="oculto">
+          <div id="instruction-description">
+            <img id="example" src="images/ejemplo.png">
+            <h4 id="title-inst"> INSTRUCCIONES </h4>
+            <br>
+            <p id="explicacion">1.- Click en el el botón "INICIO".<br>
+              2.- Te aparecerá un texto cifrado, el cual tendrás que decifrar para avanzar al siguiente nivel.<br><br><br><br>
+              ¿CÓMO LO VAS A DECIFRAR?<br>
+              3.- Usaras el metodo de desplazamiento, esto es, mover cada letra un determinado número de espacios en el alfabeto.<br>
+              En este ejemplo se usa un desplazamiento de tres espacios, <br>
+              así que una "B" en el texto original<br>
+              se convierte en una "E" en el texto codificado. 
+              <img id="desplazamiento" src="images/desplazamiento.png">
+              <br>Pero tranquilo (a), solamente tendrás que adivinar el número de desplazamiento (rango).
+              <br>
+              <br> ¿ESTAS LISTO?<br><br>
+              <button id="btn-inicio" class="btn-inicio">INICIO</button>
+          </div>
+        </section>
+
+        
+<!-- DECIFRADO VERNE-->
+        <section id="decifrado-verne" class="oculto">
+            <p id= "title-decif">Decifrado Verne</p><br>
+            <br>
+            <p id="content-decif"> “ Jvu ls zbithypuv fh uv ohiyá táz batallas uhchslz,
+                f jvtv zl zlnbpyáu pucluahukv intrumentos kl nblyyh jhkh
+                clg táz wlymljjpvuhkvz f terroríficos,
+                sh guerra tpzth zlyá ptwvzpisl.”  </p>
+            <!--RESPUESTA:"Con el submarino ya no habrá más batallas navales,
+            y como se seguirán inventando instrumentos de guerra cada vez más 
+            perfeccionados yterroríficos, la guerra misma será imposible." offset de 7-->
+            <br>
+            <input type="text" id="content-decifrado" placeholder="ingrese texto"/>
+            <br>
+            <p id="offset-text"> ¿Cúal es el número de desplazamiento? </p>
+            <input type= "number" id="offset" placeholder="ingrese un número"/><br>
+            <button type="button" id="btn-decifrar">DECIFRAR</button><br>
+            <textarea type="text" id="result-decifrar"></textarea>
+            <br>
+            <button type="button" id="btn-borrar">BORRAR</button>
+            <br><br><br><br><br>
+            <p>Para continuar, presiona siguiente.</p>
+          <button id="btn-cifrado" class="btn-cifrado">CIFRAR</button>
+            </section>
+
+            <!-- AQUI COMIENZA CIFRADO VERNE-->
+    <section id="cifrado-verne" class="oculto">
+        <p id= "title-cif">Cifrado Verne</p><br>
+        <br>
+        <p id="content-cif"> ¡FELICIDADES!<br><br>
+        Ahora es tu turno de cifrar un mensaje para que otros usuarios puedan decifrarlo. </p>
+        <br><br>
+        <input type="text" id="content-cifrado" placeholder="INGRESA AQUI EL TEXTO A CIFRAR"/>
+        <br><br>
+        <p id="offset-text"> Determina el núm. de desplazamiento </p><br>
+        <input type= "number" id="offset" placeholder="ingrese un número"/><br><br>
+        <button type="button" id="btn-cifrar">CIFRAR</button><br><br>
+        <textarea type="text" id="result-cifrar"></textarea>
+        <br>
+        <br><br><br><br>
+        </section>
+
+
+       
+
+
+   
 
 
 
@@ -90,12 +179,12 @@
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     
-<!--<footer class="footer">
+<footer id="footer">
   <div class="down-info">
     <ul>
       <li>Cifrado - decifrado César | Proyecto realizado para LABORATORIA</li>
     </ul>
   </div>
-</footer> -->
+</footer>
   </body>
 </html>

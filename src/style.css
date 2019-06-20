@@ -111,7 +111,7 @@ html{
 
   /*-------------------------------------------------
 -----------------SECTION UNO PRESENTACION */
-.presentacion {
+#presentacion {
   display:none;
     margin: 0;
     width: 100%;
@@ -157,31 +157,163 @@ html{
 /*-------------------------------------------------
 -----------------SECTION BANNER ENIGMA */
 #banner-enigma {
+  display:none;
   margin: 0;
-    width: 100%;
-    height: 100vh; /* VH es alto de la ventana. permite adaptacion en dispositivos*/
-    background: url(images/banner-bookviejoabierto.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 5%;
-    color: #fff;
-    background-color: black;
+  width: 100%;
+  background: url(images/banner-bookviejoabierto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  color: #fff;
   }
   
-h2 {
+#title-enigma {
   font-size: 1.8em;
   text-align: center;
 }
 #text-description {
   font-size: 1.3em;
-  color: #fff;
-  text-align: justify;
   padding: 40px 90px; /* el primer valor refiere a los verticales. el segundo valor a los horizontales*/
+  margin: 0; 
+}
+
+#traduccion {
+  font-size: 0.6em;
+  margin: 100px;
+}
+#criptogram {
+  float:left;
+  margin:15px;
+}
+
+#imagenes-varias {
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+  padding: 5px;
+  margin: 0;
+   
+}
+
+#instructions {
+  display: none;
   margin: 0;
   width: 100%;
+  height:105vh;
+  background: #f38b03;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5%;
+  color: black;
 }
+#title-inst {
+  font-size: 1.8em;
+  text-align: center;
+
+}
+#example {
+  float: left;
+  margin:15px;
+}
+#explicacion {
+  font-size: 1.3em;
+  padding: 20px 40px;
+  margin: 0;
+}
+#desplazamiento {
+  float: right;
+  margin:0;
+}
+
+.btn-inicio {
+  text-decoration: none; /*elimina el subrayado automatico*/
+  padding: 10px; /*distancia entre el texto y el borde del botón.  */
+  font-weight: 400; /*grosor de las letras */
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #ec0c0c;
+  border-radius: 6px;
+  margin-left: 15%;
+}
+
+.btn-inicio:hover{
+  color: #000000;
+  background-color: #7bd2fa;
+  font-weight: 600;
+}
+
+/*-------------------------------------------------
+-----------------SECTION DECIFRADO VERNE */
+#decifrado-verne {
+  display:none;
+    margin: 0;
+    width: 100%;
+    height: 150vh;
+    background: url(images/banner-escrib.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5% 5%;
+    color: #fff;
+}
+#title-decif {
+  font-size: 5em;
+  text-align: center;
+}
+
+#content-decif {
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  padding: 40px 90px; /* el primer valor refiere a los verticales. el segundo valor a los horizontales*/
+  margin: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+#offset-text {
+  font-size: 1.5em;
+}
+
+/*-------------------------------------------------
+-----------------CIFRADO VERNE */
+#cifrado-verne {
+    margin: 0;
+    width: 100%;
+    height: 150vh;
+    background: url(images/banner-books.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5% 5%;
+    color: #443f3f;
+}
+#title-cif {
+  font-size: 5em;
+  text-align: left;
+}
+
+#content-cif {
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  padding: 40px 90px; /* el primer valor refiere a los verticales. el segundo valor a los horizontales*/
+  margin: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+#offset-text {
+  font-size: 1.5em;
+}
+
 
 
 
@@ -189,7 +321,7 @@ h2 {
 
 /*-------------------------------------------------
 -----------------SECTION PIE DE PAGINA */
-/*.footer {
+#footer {
   width:100%;
   background: #10355a;
    list-style: none;
@@ -197,7 +329,7 @@ h2 {
    font-size: 0.8em;
    border-bottom: none;
    overflow: hidden;  
-   display: block;
+   display: inline-block;
    color: #97b4f8;
 }
 .down-info {
