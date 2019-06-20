@@ -3,139 +3,99 @@
   <head>
     <meta charset="utf-8">
     <title>budesbook</title>
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Cantora+One|Roboto+Condensed:300,400,700|Roboto+Slab:300,400,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
 
     <!-- HEADER
-  BARRA SUPERIOR
-  alineado izquierdo-->
-    <header class="header">  
-      <div class="top-header"> 
-          <ul>
-            <li><a href= "#" target="_blank">Quiénes somos</a></li>
-          </ul>
-        </div>
-    <!-- alineado derecho-->
-        <div class="top-redes"> 
-          <ul>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-          </ul>
-        </div>
+  BARRA SUPERIOR alineado izquierdo-->
+    <header class="header">
+      <div class="top-about">
+        <ul>
+          <li><a href="#" target="_blank">Nosotros</a></li>
+        </ul>
+      </div>
+      <!-- alineado derecho-->
+      <div class="top-redes">
+        <ul>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
       </div>
     </header>
-    
-    <!-- imagen de inicio -->
+
+    <!-- IMAGEN DE INICIO -->
     <section id="inicio" class="inicio">
-      <nav class="banner-uno">
-              <h5>"Mantente curioso"</h5>
-                <h1>B U D E S C B O O K</h1>
-                  <h3>Buscador de descuentos para lectores</h3>                   
-      </nav>
+      <div id="titles">
+        <h1>B U D E S C B O O K</h1>
+        <h3>Buscador de descuentos para lectores</h3>
+        <br>
+        <p>Todo lo que un buen lector necesita: libros, café, descuentos para libros y café...</p>
+      </div>
     </section>
-    
+<!-- PRESENTACION DEL SITIO-->
+    <section id="presentacion" class="presentacion">
+        <p>Querido lector (a):<br>
+       TÚ puedes ser
+       un GRAN BUSCADOR
+       y GANAR super DESCUENTOS
+       en libros, membresías, café y mucho más.
+       <br>
+       Lo único que tienes que hacer es
+       descubrir nuestro mensaje oculto.
+       </p>
+       <button id="btn-reto" class="btn-reto">Comenzar Reto</button>
+   </section>
 
-      <section id="section" class="section">
-           <p class= "text-one">Querido lector (a):<br>
-          TÚ puedes ser<br>
-          un GRAN BUSCADOR<br>
-          y GANAR super DESCUENTOS<br>
-          en libros, membresías, café y mucho más.<br>
-    
-          Lo único que tienes que hacer es<br>
-          descubrir  nuestros mensajes ocultos.<br>
-          </p>
-          <button id="btn-reto" class="btn-reto">Comenzar Reto</button>
-      </section>
-    
-      <!-- AQUI COMIENZA LA PAGINA 2-->
-      <section id="banner-enigma" class="oculto">
-        <h2 class="title"> ENCUENTRA EL ENIGMA </h2>
-         <br>
-          <div class="text-description">El profesor Lindenbrock, se encontraba en su gran sillón
-          forrado de terciopelo de Utrech, y tenía entre sus manos un libro que contemplaba con
-          profunda admiración.
-          - ¡Qué libro! ¡ Qué libro! ¡Magnífico! 
-          El libro que lo tenía tan entusiasmado 
-          era el......aqui va la redacción para la introducción.
-          <br>
-          El profesor Lindenbrock, se encontraba en su gran sillón
-          forrado de terciopelo de Utrech, y tenía entre sus manos un libro que contemplaba con
-          profunda admiración.
-          - ¡Qué libro! ¡ Qué libro! ¡Magnífico! 
-          El libro que lo tenía tan entusiasmado 
-          era el......aqui va la redacción para la introducción.    
-          <img class="criptogram" src="images/cifrado-verne.png">
-          <p>UNA PEQUEÑA DESCRIPCIÓN SOBRE EL CIFRADO Y DESIFRADO ENIGMA.</p>
-          <br>
-          <br>  
-          <div class="imagenes-varias">
-              <img src= "images/profesor-lin.jpg ">
-              <img src= "images/paisaje.jpg " >
-              <img src= "images/paisaje-dos.jpg ">
-          </div> 
-        </div>
-      </section>
-      
-    
-      <section id="instructions" class="oculto">
-        <div class="instruction-description">
-            <h4 class="title"> Instrucciones </h4>
-            <p class= "explicacion">AQUI VAN LOS PASOS A SEGUIR
-              oremavcvcjxckjsdñcjñdsicjdpficjdkdsocidiscjd <br>
-              AQUI VAN LOS PASOS A SEGUIR oremavcvcjxckjsdñc<br>
-              AQUI VAN LOS PASOS A SEGUIR oremavcvcjxckjsdñc<br>
-              AQUI VAN LOS PASOS A SEGUIR oremavcvcjxckjsdñc<br>
-            </p>
-            <img class="example" src="images/ejemplo.png">
-            <br>
-            <button id="btn-inicio" class="btn-inicio">INICIO</button>
-        </div>
-      </section>
-      
-    <!-- AQUI COMIENZA LA PAGINA 3-->
-    <section id="decifrado-verne" class="oculto">
-      <p>Decifrado Verne</p><br>
+<!-- AQUI COMIENZA EL RETO-->
+  <section id="banner-enigma" class="oculto">
+    <h2> EL CÓDIGO SECRETO DE ARNE SAKNUSSEMM </h2>
+    <br>
+    <div id="text-description">
+      <p>El profesor Lindenbrock, llegó con un libro muy antiguo y se encerró en su despacho. Se sentó en su gran sillón
+        forrado de terciopelo de Utrech, contemplando aquel objeto con profunda admiración.
+        <br>
+        - ¡Qué libro! ¡ Qué libro! ¡Magnífico!
+        <br>
+        Después de un rato me pidió que entrara y me lo monstro.Lo sostuve en mis manos, y luego de admirarlo por un
+        momento, pregunte:
+        <br>- ¿Cúal es el título de este maravilloso libro?
+        <br>- ¡Esta obra - respondió mi tío animándose - es el "Heimskringla", de Snorri Sturluson, el famoso autor
+        islandés del siglo XII! ¡Es la crónica de los príncipes noruegos que reinaron en Islandia! ¡Es un manuscrito
+        rúnico!
+        <br>- ¿un manuscrito rúnico?
+        <br>- Asi es. Las runas - prosiguió- eran unos caracteres de escritura usada en otro tiempo en Islandia, y, según
+        la tradición, fueron inventados por el mismo Odín...
+        <br>Mientras mi tio seguía admirando el libro, haciendo movimientos suaves para no maltratarlo y asi, deslizándose
+        de entre las hojas del libro, cayó al suelo un pergamino grasiento. Mi tío se apresuró a recogerlo con indecible
+        avidez.
+        Y al mismo tiempo desplegaba cuidadosamente sobre la mesa un trozo de pergamino de unas cinco pulgadas de largo
+        por tres de ancho, en el que había trazados, en líneas transversales, unos caracteres mágicos.</p>
       <br>
-      <h3> la palabra a decodificar es:  </h3>
-      <br>
-      <input type="text" id="content-decifrado" placeholder="ingrese texto"/>
-      <br>
-      <h4> Escoge el nivel de dificultad de tu cifrado </h4>
-      <input type= "number" id="offset" placeholder="ingrese un número"/>
-      <button type="button" id="btn-decifrar">DECIFRAR</button>
-      <input type="text" id="result-decifrar"/>
-      <br>
-      <button type="button" id="btn-borrar">BORRAR</button>
-      <br><br><br><br><br>
-      <p>AQUI ESTA EL BOTON PARA CIFRAR</p>
-    <button id="btn-cifrado" class="btn-cifrado">CIFRAR</button>
-      </section>
+      <h4>DECIFRANDO EL ENIGMA</h4>
+      <figure class="criptogram"><img src="images/cifrado-verne.png" width="800px" height="300px"></figure>
+      <p> mas texto</p>
+    </div>
+  </section>
 
-      
-    <section id="cifrado-verne" class="oculto">
-    <p>cifrado Verne</p><br>
-    <br>
-    <h3> la palabra a codificar es : TEXTO </h3>
-    <br>
-    <input type="text" id="content-cifrado" placeholder="ingrese texto"/>
-    <br>
-    <h4> Escoge el nivel de dificultad </h4>
-    <input type= "number" id="offset" placeholder="ingrese un número"/>
-    <button type="button" id="btn-cifrar">CIFRAR</button>
-    <br><input type="text" id="result-cifrado"/>
-    <br>
-    
-    </section>
-    
+
+
+
 
 
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     
-
+<!--<footer class="footer">
+  <div class="down-info">
+    <ul>
+      <li>Cifrado - decifrado César | Proyecto realizado para LABORATORIA</li>
+    </ul>
+  </div>
+</footer> -->
   </body>
 </html>
