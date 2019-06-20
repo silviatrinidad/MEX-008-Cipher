@@ -80,9 +80,8 @@ btnCifrar.addEventListener('click', () => {
 //FUNCION LIMPIAR FORMULARIO
 const btnBorrar= document.getElementById('btn-borrar');
 const borrarDecifrado= () => {
-  document.getElementById('content-cifrado').reset();
-  document.getElementById('offset').reset();
-  document.getElementById('result-decifrar').reset();
-  
+  document.getElementById('decifrado-verne').reset();
+  let borrarDecifradoVerne=  
+  innerHeight.HTML='';
 }
 btnBorrar.addEventListener('click', borrarDecifrado);
