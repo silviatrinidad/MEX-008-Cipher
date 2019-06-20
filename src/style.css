@@ -99,9 +99,11 @@ html{
     background-color: #10355a90; /* los ultimos dos digitos indican el porcentaje de opacidad*/
   }
   h1 {
+    font-family: 'Cantora One', sans-serif;
     font-size: 6em; /* 1em= 16px */
   }
   h3 {
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
   }
   .titles p {
@@ -132,6 +134,7 @@ html{
   margin: 0;
   width: 50%;
   overflow: hidden;
+  font-family: 'Roboto Slab', serif;
   
 }
 .btn-reto {
@@ -168,13 +171,15 @@ html{
   }
   
 #title-enigma {
-  font-size: 1.8em;
+  font-size: 1.9em;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #text-description {
   font-size: 1.3em;
   padding: 40px 90px; /* el primer valor refiere a los verticales. el segundo valor a los horizontales*/
   margin: 0; 
+  font-family: 'Roboto Slab', serif;
 }
 
 #traduccion {
@@ -220,6 +225,7 @@ html{
   font-size: 1.3em;
   padding: 20px 40px;
   margin: 0;
+  font-family: 'Roboto Slab', serif;
 }
 #desplazamiento {
   float: right;
