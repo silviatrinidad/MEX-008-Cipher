@@ -8,9 +8,9 @@ decode: (offset, str) => {
     const pastCode= str.charCodeAt(i);
 
     if (pastCode >= 65 && pastCode <=90) {
-      codigoDecod= (pastCode -90 - offset) % 26 - 90;
+      codigoDecod= (pastCode -90 - offset) % 26 + 90;
     } else if (pastCode >= 97 && pastCode <= 122) {
-      codigoDecod= (pastCode - 122 - offset) %26 - 122;
+      codigoDecod= (pastCode - 122 - offset) %26 + 122;
     } else {
       codigoDecod= pastCode;
     }
