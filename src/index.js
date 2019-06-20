@@ -12,7 +12,7 @@ const mostrar= (id) => {
 
 const abrirReto = () =>{
   ocultar('inicio');
-  ocultar('section');
+  ocultar('presentacion');
   mostrar('banner-enigma');
   mostrar('instructions');
 }
@@ -24,6 +24,7 @@ const btnInicio =document.getElementById('btn-inicio');
 
 const abrirDecifradoVerne =() => {
   ocultar('inicio');
+  ocultar('presentacion');
   ocultar('banner-enigma');
   ocultar('instructions');
   ocultar('cifrado-verne');
@@ -74,14 +75,4 @@ const inputResult= document.getElementById('result-cifrado');
 btnCifrar.addEventListener('click', () => { 
    // console.log(cipher.encode(offset.value, inputContent.value))
     inputResult.value = cipher.encode(parseInt(offset.value), inputContent.value)
-});
-
-
-//FUNCION LIMPIAR FORMULARIO
-const btnBorrar= document.getElementById('btn-borrar');
-const borrarDecifrado= () => {
-  document.getElementById('decifrado-verne').reset();
-  let borrarDecifradoVerne=  
-  innerHeight.HTML='';
-}
-btnBorrar.addEventListener('click', borrarDecifrado);
+})
